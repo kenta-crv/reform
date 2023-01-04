@@ -61,12 +61,15 @@ class EstimatesController < ApplicationController
     params.require(:estimate).permit(
       :name,  #名前
       :kana,  #ふりがな
-      :tel, #電話番号
+      :tel, #携帯番号
       :email, #メールアドレス
-      :postnumber, #募集エリア
       :address, #住所
-      :user_name,
-      :user_password
+      :type, #住居タイプ
+      :select, #リフォーム箇所
+      :year, #築年数
+      :period, #施工時期
+      :price, #予算
+      :message
     )
   end
 

@@ -6,8 +6,10 @@ class Estimate < ApplicationRecord
   validates :name, presence: true
   validates :kana, {presence: true}  #ふりがな
   validates :tel, {presence: true} #電話番号
-  validates :email,
-    presence: true
-  validates :postnumber, {presence: true} #郵便番号
+  validates :email, {presence: true}
   validates :address, {presence: true} #住所
+  validates :type, presence: true
+  validates :select, {presence: true}  #ふりがな
+  validates :period, {presence: true} #電話番号
+  validates :price, {presence: true}
 end

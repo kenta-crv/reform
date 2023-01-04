@@ -1,9 +1,9 @@
 module ApplicationHelper
   def default_meta_tags
     {
-      site: "自家用車を活用して誰でも簡単に副収入を稼ぐならドライバドス",
+      site: "リフォーム一括見積ねっとで最安値リフォーム会社を比較",
       title:"<%= yield(:title) | ドライバドズ' %>",
-      description: "自家用車を活用して副収入を稼ぐならドライバドス。安定的な収入を確保出来ます。",
+      description: "リフォーム一括見積ねっとで最安値リフォーム会社を比較できる。",
       canonical: request.original_url,  # 優先されるurl
       charset: "UTF-8",
       reverse: true,

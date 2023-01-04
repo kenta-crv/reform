@@ -12,7 +12,7 @@ class CreateEstimates < ActiveRecord::Migration[5.2]
       t.string :year #築年数
       t.string :period #施工時期
       t.string :price #予算
-
+      t.string :message 
       t.references :user
       t.timestamps
     end

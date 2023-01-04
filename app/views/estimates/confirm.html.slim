@@ -45,35 +45,58 @@
         td
           strong.label 必須
         td.arrow_box
-          | 郵便番号
-        td
-          = f.hidden_field :postnumber
-          = @estimate.postnumber
-      tr
-        td
-          strong.label 必須
-        td.arrow_box
           | 住所
         td
           = f.hidden_field :address
           = @estimate.address
-      - if current_user.blank?
-        tr
-          td
-            strong.label 必須
-          td.arrow_box
-            | ユーザー名
-          td
-            = f.hidden_field :user_name
-            = @estimate.user_name
-        tr
-          td
-            strong.label 必須
-          td.arrow_box
-            | パスワード
-          td
-            | ******
-            = f.hidden_field :user_password
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 住居タイプ
+        td
+          = f.hidden_field :type
+          = @estimate.type
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | リフォーム箇所
+        td
+          = f.hidden_field :select
+          = @estimate.select
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 築年数
+        td
+          = f.hidden_field :year
+          = @estimate.year
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 施工時期
+        td
+          = f.hidden_field :period
+          = @estimate.period
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 予算
+        td
+          = f.hidden_field :price
+          = @estimate.price
+      tr
+        td
+          strong.label 必須
+        td.arrow_box
+          | 備考
+        td
+          = f.hidden_field :message
+          = @estimate.messae
       tr
         td colspan="3"
           = f.submit "送信"

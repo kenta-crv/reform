@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2022_12_15_130130) do
     t.string "year"
     t.string "period"
     t.string "price"
+    t.string "message"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

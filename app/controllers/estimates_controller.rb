@@ -64,7 +64,7 @@ class EstimatesController < ApplicationController
       :tel, #携帯番号
       :email, #メールアドレス
       :address, #住所
-      :type, #住居タイプ
+      :choice, #住居タイプ
       :select, #リフォーム箇所
       :year, #築年数
       :period, #施工時期

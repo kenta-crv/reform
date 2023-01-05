@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2022_12_15_130130) do
     t.string "tel"
     t.string "email"
     t.string "address"
-    t.string "type"
+    t.string "choice"
     t.string "select"
     t.string "year"
     t.string "period"

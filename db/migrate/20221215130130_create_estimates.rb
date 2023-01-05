@@ -7,12 +7,12 @@ class CreateEstimates < ActiveRecord::Migration[5.2]
       t.string :email #メールアドレス
       t.string :address #住所
 
-      t.string :type #住居タイプ
+      t.string :choice #住居タイプ
       t.string :select #リフォーム箇所
       t.string :year #築年数
       t.string :period #施工時期
       t.string :price #予算
-      t.string :message 
+      t.string :message
       t.references :user
       t.timestamps
     end

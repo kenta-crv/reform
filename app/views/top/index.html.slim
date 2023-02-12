@@ -14,17 +14,15 @@ br
       br
     .col-xs-6
         br
+        .title.box1
+         | 三重県在住者限定！
         .index-3
-         | リフォームの最安値企業を
+         | 補助金を活用してオトクに
          br
-         | 一括見積で気軽に比較
+         | ご自宅をリフォームなら
          br
-        .title
-         |
         br
         p.push
-         span
-           | \ カンタン60秒入力! /
         =link_to '/estimates/new' do
          =image_tag 'click3.webp', width: '100%', class: 'center'
 
@@ -35,10 +33,10 @@ br
    .col-sm-12.center
      h2.push
       span
-       | 一括見積比較で条件の良い
+       | 三重県で活用できる
        br
        br
-       | リフォーム会社を探せる
+       | リフォーム補助金が多数！
 br
 
 .row#anchor
@@ -55,6 +53,20 @@ br
      =image_tag 'which.webp', width: '65%', class: 'center', alt: 'リフォーム一括見積もりサイトの構図'
      br
 
+.row#anchor
+   .col-sm-12.center
+     h2.surprise
+        | 更に補助金活用でお得にリフォーム
+
+.top-wrapper
+ h6.center リフォーム一括見積ねっとは、過去1000件を超える補助金申請のサポート実績を活かし、相見積もりに合わせて補助金を適用することで、どこよりもお得にお客様のリフォームをサポートします。
+ br
+ br
+ .row.center
+   .col-sm-12
+     =image_tag 'subsidy.png', width: '65%', class: 'center', alt: 'リフォーム一括見積もりサイトの構図'
+     br
+
 br
 hr.line
 br
@@ -65,6 +77,8 @@ br
      | \ カンタン60秒入力! /
    = link_to "#anchor" do
      =image_tag 'click3.webp', width: '70%', class: 'center'
+  .small 
+    | ※補助金活用は総額50万円の場合のみご案内可能となります。
 
 .row
    .col-sm-12.center
@@ -82,14 +96,14 @@ br
      p.text 金額を重視される場合、リフォーム一括見積ねっとなら簡単に最安値の企業を見つけることができます。
      br
    .col-sm-4
+     h3.head-red 補助金でお得にリフォームしたい
+     =image_tag 'image9.webp', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
+     p.text リフォームを行うにも価格は最低限抑えたい方には、一括見積から更に補助金で割引が効きます。
+     br
+   .col-sm-4
      h3.head 条件に合わせた企業の選定も◎
      =image_tag 'image8.webp', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
      p.text 金額だけではなく、希望条件を叶えてくれるリフォーム会社の選定もお任せください。
-     br
-   .col-sm-4
-     h3.head 金額が張っても匠と取引したい
-     =image_tag 'image9.webp', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
-     p.text 一生で一度かもしれないリフォーム。折角ならお金をかけてこだわりの会社を選定するのも良しです。
      br
 
 hr.line
@@ -105,57 +119,112 @@ br
        | 希望に合わせた見積を叶えます！
 br
 
+.row
+   .col-sm-12.center
+     h2.surprise
+        | 活用出来る補助金の一例
+
+.top-wrapper
+ h6.center 補助金は非常に複雑性があり、全ての補助金を掲載しきれませんが、その中でもいくつかの補助金を一例としてご案内します。
+ .row.center
+   .col-sm-4
+     h3.head 【松阪市】耐震工事
+     =image_tag 'matsusaka.png', width: '95%', class: 'center', alt:"自販機設置を各社一括見積り"
+     .red.bold 最大50万円の補助金
+     br
+   .col-sm-4
+     h3.head 【伊勢市】耐震補助工事
+     =image_tag 'ise.png', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
+     .red.bold 最大100万円の補助金
+     br
+   .col-sm-4
+     h3.head 【玉城町】空き家リフォーム
+     =image_tag 'tamakicho.png', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
+     .red.bold 最大150万円の補助金
+     br
+ .row.center
+   .col-sm-4
+     h3.head 【三重県】省エネ関連補助金
+     =image_tag 'energy.png', width: '95%', class: 'center', alt:"自販機設置を各社一括見積り"
+     .red.bold 最大250万円の補助金
+     br
+   .col-sm-4
+     h3.head 【三重県】バリアフリー補助金
+     =image_tag 'barrier.png', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
+     .red.bold 最大250万円の補助金
+     br
+   .col-sm-4
+     h3.head 【三重県】三世代同居補助金
+     =image_tag 'family.png', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
+     .red.bold 最大250万円の補助金
+     br
+
 
 .row
    .col-sm-12.center
      h2.surprise
-        | リフォームランキングと費用事例
+        | 補助金活用の実例
 
 .top-wrapper
- .row.center
-   .col-sm-4
-     h3.head ❶フルリフォーム
-     =image_tag 'image1.webp', width: '95%', class: 'center', alt:"自販機設置を各社一括見積り"
-     .red.bold 相場300~2400万円
-     br
-   .col-sm-4
-     h3.head ❷キッチン
-     =image_tag 'image2.webp', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
-     .red.bold 相場40~150万円
-     br
-   .col-sm-4
-     h3.head ❸トイレ
-     =image_tag 'image3.webp', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
-     .red.bold 相場4万円〜30万円
-     br
- .row.center
-   .col-sm-4
-     h3.head ❹リビング
-     =image_tag 'image4.webp', width: '95%', class: 'center', alt:"自販機設置を各社一括見積り"
-     .red.bold 相場25~100万円
-     br
-   .col-sm-4
-     h3.head ❺洗面所
-     =image_tag 'image5.webp', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
-     .red.bold 相場8~25万円
-     br
-   .col-sm-4
-     h3.head ❻玄関
-     =image_tag 'image6.webp', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
-     .red.bold 相場30~45万円
-     br
-
-br
-hr.line
-br
-br
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'image1.webp', width: '95%', class:"image-height"
+   .col-sm-8
+     h3 省エネフルリフォーム
+     .row  
+      .col-sm-5
+       .before
+        del 800万円
+        |  →
+      .col-sm-5
+       .after
+        | 680万円
+     p 省エネ工事を含めたフルリフォームを行い、220万円の補助金を受給しました。
+ br
+ hr.line
+ br
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'earthquake.png', width: '95%', class:"image-height"
+   .col-sm-8
+     h3 耐震工事リフォーム
+     .row  
+      .col-sm-5
+       .before
+        del 150万円
+        |  →
+      .col-sm-5
+       .after
+        | 100万円
+     p 耐震工事を中心としたリフォームを実施し、自治体から50万円の補助金を受給しました。
+ br
+ hr.line
+ br
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'earthquake.png', width: '95%', class:"image-height"
+   .col-sm-8
+     h3 バリアフリーフルリフォーム
+     .row  
+      .col-sm-5
+       .before
+        del 900万円
+        |  →
+      .col-sm-5
+       .after
+        | 650万円
+     p バリアフリー工事をフルリフォームで実施し、国から250万円の補助金を受給しました。
+ br
+ hr.line
+ br
 .row
   .col-sm-12.push
    span
      | \ カンタン60秒入力! /
    = link_to "#anchor" do
      =image_tag 'click3.webp', width: '70%', class: 'center'
-
+  .small 
+    | ※補助金活用は総額50万円の場合のみご案内可能となります。
 
 
 .row
@@ -164,23 +233,54 @@ br
         | リフォーム一括見積ねっとの費用
 
 .top-wrapper
- .row.center
-   .col-sm-4
-     h3.head サイト利用費用完全無料
-     =image_tag 'image10.webp', width: '95%', class: 'center', alt:"自販機設置を各社一括見積り"
-     p.text 当サイトをご利用頂くにあたっては一切費用は頂いておりません。
-     br
-   .col-sm-4
-     h3.head 現地調査無料
-     =image_tag 'image11.webp', width: '95%', class: 'center', alt:"条件の良い自販機会社を選定"
-     p.text 担当者が現地調査へ伺う場合、訪問費用も頂いておりません。
-     br
-   .col-sm-4
-     h3.head 断り企業への連絡も不要
-     =image_tag 'image12.webp', width: '95%', class: 'center', alt:"自販機の新規設置以外にも交換もOK"
-     p.text 決定した企業以外への断りも当社が無料で代行致します。
-     br
-
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'image10.webp', width: '95%', class:"image-height"
+   .col-sm-8
+    br
+    br
+    .row
+     .col-sm-6
+       h3 サイト利用費
+     .col-sm-6
+       .after
+        | 0円
+    br
+    p サイト利用費は一切いただいておりません。
+ br
+ hr.line
+ br
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'estimate.png', width: '95%', class:"image-height"
+   .col-sm-8
+    br
+    br
+    .row
+     .col-sm-6
+       h3 成約手数料無料
+     .col-sm-6
+       .after
+        | 0円
+    br
+    p 一括見積で成約した場合にも、当サイトにお支払いする費用は一切発生しません。
+ br
+ hr.line
+ br
+ .row.before-after
+   .col-sm-4 
+     =image_tag 'image12.webp', width: '95%', class:"image-height"
+   .col-sm-8
+    br
+    br
+    .row
+     .col-sm-6
+       h3 補助金代行費は完全成功報酬制
+     .col-sm-6
+       .after
+        | 20%
+    br
+    p 補助金申請における費用は保証金は発生しますが、完全成功報酬。不支給の場合費用発生しないので、安心してご利用いただけます。
 
 br
 hr.line
@@ -192,7 +292,8 @@ br
      | \ カンタン60秒入力! /
    = link_to "#anchor" do
      =image_tag 'click3.webp', width: '70%', class: 'center'
-
+  .small 
+    | ※補助金活用は総額50万円の場合のみご案内可能となります。
 
 
 .row
@@ -227,13 +328,36 @@ br
          .cp_actab-content
            p
              | もちろんご相談ください。相談内容に応じて、当サイト窓口もしくは見積もり先企業にて内容を承らせて頂きます。
-
-br
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour04[type="checkbox" name="tabs"]
+         label[for="cp_tabfour04"]
+           | お見積りにおける最低利用金額はありますか？
+         .cp_actab-content
+           p
+             | 当社は補助金を活用したリフォーム一括見積サイトとなりますため、最低30万円以上の依頼のみを受付しております。
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour05[type="checkbox" name="tabs"]
+         label[for="cp_tabfour05"]
+           | 補助金のみの利用はできますか？
+         .cp_actab-content
+           p
+             | 申し訳ありません。当社はリフォーム一括見積をご利用いただいた方にのみ、特典として補助金案内を致しております。
+     .cp_qa.cp_qa1
+       .cp_actab
+         input#cp_tabfour06[type="checkbox" name="tabs"]
+         label[for="cp_tabfour06"]
+           | 補助金を利用する場合、割引になるんですか？
+         .cp_actab-content
+           p
+             | 実質的に言うと割引で間違いございません。但し、補助金の特性上、一度支払った証明を元に自治体へ申請し、お金が戻ってくる仕組みとなります。
+br             
 br
 .row
   .col-sm-12.center
     h2.surprise
-       | 見積りのカンタン4STEP
+       | 見積りのカンタン5STEP
 
 br
 br
@@ -275,6 +399,14 @@ ul.flow.center
         | リフォーム開始
       dd.center
         | 業者が決定しましたら、契約を行い、リフォームを開始します。
+  li
+    dl
+      dt
+        span.icon
+          | STEP.05
+        | 補助金申請・受給
+      dd.center
+        | 申請フローに従い補助金申請を行い、国や自治体からお金が返ってきます。
 
 
 br
@@ -289,6 +421,7 @@ br
      | \ カンタン60秒入力! /
    = link_to "/estimates/new" do
      =image_tag 'click3.webp', width: '70%', class: 'center'
-
+  .small 
+    | ※補助金活用は総額50万円の場合のみご案内可能となります。
 br
 br

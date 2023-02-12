@@ -223,8 +223,9 @@
         text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
     }
     .title {
-        font-size:4.5vw;
+        font-size:4.0vw;
         font-weight:bold;
+        margin-bottom:15px;
         line-height:6vw;
         color:red;
         text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
@@ -235,7 +236,7 @@
         font-size:3.8vw;
         color:#F27200;
         font-weight:bold;
-        width:100%;
+        width:120%;
         text-shadow: 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff, 3px 3px 3px #fff, -3px 3px 3px #fff, 3px -3px 3px #fff, -3px -3px 3px #fff;
     }
    }
@@ -251,6 +252,7 @@
       display:inline-block;
       text-align:center;
       background: red;
+      border-radius: 10px;
             p {
             color: #FFF;/*文字色*/
             font-weight: bold;
@@ -719,8 +721,33 @@
       font-weight:bold;
       font-size:18px;
     }
-
     h3.head:after {
+      /*タブ*/
+      position: absolute;
+      font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+      content: '\f00c Check';
+      background: $asort_color;
+      color: #fff;
+      left: 0px;
+      bottom: 100%;
+      border-radius: 5px 5px 0 0;
+      padding: 3px 7px 1px;
+      font-size: 0.7em;
+      line-height: 1;
+      letter-spacing: 0.05em
+    }
+    h3.head-red {
+      position: relative;
+      background:red;
+      line-height: 1.4;
+      padding: 0.25em 0.5em;
+      margin: 2em 0 0.5em;
+      border-radius: 0 5px 5px 5px;
+      color:white;
+      font-weight:bold;
+      font-size:18px;
+    }
+    h3.head-red:after {
       /*タブ*/
       position: absolute;
       font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
@@ -809,6 +836,7 @@
 
  .red {
    color: red;
+   font-size:21px;
  }
 
  .font-height {
@@ -1131,7 +1159,7 @@
  	overflow: hidden;
  	width: 90%;
  	margin: 0 0 1em 0;
- 	color: $main_color;
+ 	color: white;
  }
  .cp_qa .cp_actab input {
  	position: absolute;
@@ -1148,7 +1176,7 @@
  	cursor: pointer;
  	text-indent: 1em;
  	border-radius: 0.5em;
- 	background: rgba(27,37,56,0.1);
+ 	background: $main_color;
  }
  .cp_qa .cp_actab label::before {
  	font-family: serif;
@@ -1169,7 +1197,7 @@
  	position: absolute;
  	top: 0;
  	right: 0;
- 	content: 'b';
+ 	content: 'A';
  	display: inline-block;
  	width: 2em;
  	height: 2em;
@@ -1346,4 +1374,33 @@
    max-width: 1024px;
    margin: 0 auto;
    margin-top: 30px;
+ }
+
+
+ .small  {
+  size:30px;
+  color:$asort_color;
+  text-align:center;
+  font-weight:bold;
+ }
+
+ .before-after {
+  h3 {
+    font-size:30px;
+    font-weight:bold;
+  }
+  .image-height{
+    padding-top:30px;
+  }
+  .before {
+    font-size:40px;
+    color:#666;
+    font-weight:bold;
+    margin-top:8px;
+  }
+  .after {
+    font-size:48px;
+    color:red;
+    font-weight:bold;
+  }
  }

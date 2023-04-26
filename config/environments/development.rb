@@ -10,7 +10,7 @@ Rails.application.configure do
   domain: 'factoru.jp',
   port: 587,
   user_name: 'reform@factoru.jp',
-  password: 'XAS&B5ua',
+  password: 'dsgfsfgerkf#f11',
   authentication: 'plain',
   enable_starttls_auto: true
   }

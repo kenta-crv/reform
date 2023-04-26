@@ -3,100 +3,102 @@
   br
   .tops-wrapper
     h2.headline
-      | お問い合わせ内容確認フォーム
-    table.company
+      | お見積りフォーム内容確認
+  .company-wrapper
+    table.company.responsive-table
       colgroup
-        col width="10%"
-        col width="20%"
-        col width="70%"
+        col.col-1
+        col.col-2
+        col.col-3
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | お名前
-        td
+        td.responsive-cell
          = f.hidden_field :name
          = @estimate.name
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | フリガナ
-        td
+        td.responsive-cell
          = f.hidden_field :kana
          = @estimate.kana
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 携帯番号
-        td
+        td.responsive-cell
           = f.hidden_field :tel
           = @estimate.tel
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | メールアドレス
-        td
+        td.responsive-cell
           = f.hidden_field :email
           = @estimate.email
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 住所
-        td
+        td.responsive-cell
           = f.hidden_field :address
           = @estimate.address
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 住居タイプ
-        td
+        td.responsive-cell
           = f.hidden_field :choice
           = @estimate.choice
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | リフォーム箇所
-        td
+        td.responsive-cell
           = f.hidden_field :select
           = @estimate.select
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 築年数
-        td
+        td.responsive-cell
           = f.hidden_field :year
           = @estimate.year
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 施工時期
-        td
+        td.responsive-cell
           = f.hidden_field :period
           = @estimate.period
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 予算
-        td
+        td.responsive-cell
           = f.hidden_field :price
           = @estimate.price
       tr
-        td
+        td.label-cell
           strong.label 必須
-        td.arrow_box
+        td.arrow-box-cell
           | 備考
-        td
+        td.responsive-cell
           = f.hidden_field :message
           = @estimate.message
       tr
-        td.center colspan="3"
-          = f.submit "送信"
+        td colspan="3"
+         .center
+          = f.submit "送信", class: "btn btn-warning"

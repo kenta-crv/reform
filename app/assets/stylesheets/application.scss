@@ -153,6 +153,18 @@
    padding-bottom:50px;
    margin-top:-22px;
  }
+ @media (max-width: 768px) {
+  .back-image-app {
+    background-image: url('base4.webp');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding-bottom:50px;
+    margin-top:-22px;
+  }
+ }
+
+ 
  .back-image {
    text-align:center;
      .box2 {
@@ -229,7 +241,14 @@
         line-height:6vw;
         color:red;
         text-shadow: 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
-    }
+      }
+      @media (max-width: 768px) {
+        .title {
+          font-size: 2.5vw; /* 任意のフォントサイズに変更してください */
+          margin-bottom:10px;
+        }
+      }
+
     /*イエローライン*/
     .push {
         text-align:center;
@@ -258,7 +277,9 @@
             font-weight: bold;
             font-size:1.7vw;
               }
+              
        }
+       @media (max-width: 768px) {.box1{padding: 0.3rem 1.2rem 0.3rem;}}
 
 
 
@@ -444,49 +465,100 @@
 
 
                                              /*テーブルに関する情報*/
- /*テーブル共通*/
+/*テーブル共通*/
+table.company {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0px 15px;
+  font-size: 1.3vw;
+  th, td { padding: 10px; }
+  th {
+     background: var(--main-color);
+     vertical-align: middle;
+     text-align: left;
+     overflow: visible;
+     position: relative;
+     color: #fff;
+     font-weight: bold;
+     :after {
+        left: 100%;
+        top: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-left-color: var(--main-color);
+        border-width: 10px;
+        margin-top: -10px;
+        }
+     }
+
+  td {
+     background: #f4f4f4;
+     }
+     
+}
+
+
+
+@media screen and (max-width: 767px) {
  table.company {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: separate;
-    border-spacing: 0px 15px;
-    font-size: 1.5vw;
-
-    th, td { padding: 10px; }
-
-    th {
-       background: $main_color;
-       vertical-align: middle;
-       text-align: left;
-       overflow: visible;
-       position: relative;
-       color: #fff;
-       font-weight: bold;
-
-       :after {
-          left: 100%;
-          top: 50%;
-          border: solid transparent;
-          content: " ";
-          height: 0;
-          width: 0;
-          position: absolute;
-          pointer-events: none;
-          border-color: rgba(136, 183, 213, 0);
-          border-left-color: $main_color;
-          border-width: 10px;
-          margin-top: -10px;
-          }
-       }
-
-    td {
-       background: #f4f4f4;
-
-       }
-       .lp-small {
-         font-size:12px;
-       }
+   width: 100%;
  }
+
+ .label-cell,
+ .arrow-box-cell {
+   display: inline-block;
+   font-size:21px;
+   box-sizing: border-box;
+ }
+
+ .label-cell {
+  font-size:21px;
+   background-color: #f0f0f0 !important; /* 任意の背景色に変更 */
+ }
+
+ .responsive-cell {
+   display: block;
+   font-size:21px;
+   width: 100%;
+   background-color: #e0e0e0 !important; /* 任意の背景色に変更 */
+ }
+
+ .input-container {
+   display: block;
+   width: 100%;
+ }
+}
+
+
+@media screen and (max-width: 767px) {
+  .label-cell,
+  .arrow-box-cell {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .label-cell {
+    background-color: #f0f0f0 !important; /* 任意の背景色に変更 */
+  }
+
+  .responsive-cell {
+    display: block;
+    width: 100%;
+    background-color: #e0e0e0 !important; /* 任意の背景色に変更 */
+  }
+
+  .input-container {
+    display: block;
+    width: 100%;
+  }
+}
 
 
  /* firefox */
